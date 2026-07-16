@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: buildless-limits-waic
+    runtime: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm ci && npm run assets:download && npm run build:render
+    startCommand: npm run start:render
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.0
