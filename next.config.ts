@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  typescript: {
+    tsconfigPath: process.env.RENDER ? "./tsconfig.render.json" : "./tsconfig.json",
+  },
 };
 
 export default nextConfig;
