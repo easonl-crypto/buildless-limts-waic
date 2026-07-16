@@ -44,3 +44,9 @@ ASSET_BASE_URL=https://example.com npm run assets:download
 
 - [网站首页](https://buildless-limits-waic.ruby-flute-4091.chatgpt.site/?v=19)
 - [AI Video 赛道](https://buildless-limits-waic.ruby-flute-4091.chatgpt.site/video?v=19)
+
+## 免费部署到 Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/easonl-crypto/buildless-limts-waic)
+
+点击按钮后选择免费方案即可。Render 会自动安装依赖、下载比赛素材、构建并启动网站。
