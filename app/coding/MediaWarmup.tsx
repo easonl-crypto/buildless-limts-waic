@@ -58,7 +58,7 @@ export default function MediaWarmup({
 
     if (eager) {
       timer = window.setTimeout(warm, 600);
-    } else if ("IntersectionObserver" in window) {
+    } else if (typeof IntersectionObserver !== "undefined") {
       observer = new IntersectionObserver(
         (entries) => {
           if (entries.some((entry) => entry.isIntersecting)) {
